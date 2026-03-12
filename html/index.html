@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Chhabra - Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="landing-page">
+        <div class="profile-container">
+            <img src="../pictures/anshlogo.png" alt="Profile Picture" class="profile-picture" onclick="toggleButtons()" style="cursor: pointer;">
+        </div>
+        
+        <div class="buttons-container" id="buttonsContainer">
+            <a href="resume.html" class="btn btn-primary">Resume</a>
+            <a href="projects.html" class="btn btn-primary">Projects</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleButtons() {
+            const buttonsContainer = document.getElementById('buttonsContainer');
+            buttonsContainer.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
